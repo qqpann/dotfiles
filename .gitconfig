@@ -1,6 +1,8 @@
 [user]
 	name = Qiushi Pan
 	email = 17402261+qqpann@users.noreply.github.com
+[color]
+	ui = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
