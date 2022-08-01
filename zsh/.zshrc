@@ -2,6 +2,11 @@ if [ -f $HOME/.dotfiles/zsh/.omz.zshrc ]; then
 	source $HOME/.dotfiles/zsh/.omz.zshrc
 fi
 
+# =================================================================
+# Aliases
+alias c.='code .'
+# =================================================================
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
