@@ -7,6 +7,15 @@
 - GitHub Desktop
 - Homebrew (macOS)
 
+## Homebrew bundle management
+
+```sh
+# Install
+brew bundle install
+# Update Brewfile
+brew bundle dump --force
+```
+
 ## iTerms theme setup
 
 - General > Window > Uncheck "Native full screen windows"
