@@ -5,4 +5,4 @@
 - VSCode
 - iTerms
 - GitHub Desktop
-- Homebrew
+- Homebrew (macOS)
