@@ -16,3 +16,14 @@
   - Space: set to "All spaces"
 
 Profiles can also be imported/exported as JSON.
+
+## VSCode config
+
+VSCode does not have a proper default for press & hold behavior, making vim mode hard to use.
+
+```sh
+defaults read com.microsoft.VSCode ApplePressAndHoldEnabled
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+```
+
+Set it to false to use press & hold in vim mode to move around.
