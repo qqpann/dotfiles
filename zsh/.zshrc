@@ -11,3 +11,6 @@ export NVM_DIR="$HOME/.nvm"
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+# pyenv
+eval "$(pyenv init -)"
