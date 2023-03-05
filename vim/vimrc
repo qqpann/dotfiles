@@ -1,0 +1,50 @@
+" Enable syntax highlighting
+syntax enable
+
+" Set the number of spaces for a tab
+set tabstop=4
+
+" Indentation settings
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+" Enable the mouse in all modes
+set mouse=a
+
+" Enable syntax checking
+syntax on
+filetype plugin indent on
+
+" Highlight search results
+set hlsearch
+
+" Show the cursor position
+set ruler
+
+" Show the line numbers
+set number
+
+" Auto-indent new lines
+set autoindent
+
+" Ignore case when searching
+set ignorecase
+
+" Allow the cursor to move beyond the end of the line
+set virtualedit=all
+
+" Highlight matching parentheses
+set showmatch
+
+" Enable backup files
+set backup
+set backupdir=~/.vim/backups
+set backupext=.bak
+
+" Enable persistent undo
+set undofile
+set undodir=~/.vim/undo
+
+" Enable line wrapping
+set wrap
