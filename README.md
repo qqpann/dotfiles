@@ -1,5 +1,12 @@
 # dotfiles
 
+## Quick start
+
+```sh
+# install zsh beforehand.
+curl https://qpan.dev/init.sh | bash
+```
+
 ## Manual installation
 
 - VSCode
