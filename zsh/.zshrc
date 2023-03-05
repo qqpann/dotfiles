@@ -1,3 +1,6 @@
+if [ -f $HOME/.dotfiles/update.sh ]; then
+	source $HOME/.dotfiles/update.sh
+fi
 if [ -f $HOME/.dotfiles/zsh/.omz.zshrc ]; then
 	source $HOME/.dotfiles/zsh/.omz.zshrc
 fi
