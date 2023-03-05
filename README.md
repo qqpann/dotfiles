@@ -4,7 +4,7 @@
 
 ```sh
 # install zsh beforehand.
-curl https://qpan.dev/init.sh | bash
+curl https://qpan.dev/init.sh | zsh
 ```
 
 ## Manual installation
