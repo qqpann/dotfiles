@@ -9,7 +9,7 @@ fi
 # Aliases
 alias ..='cd ..'
 alias c.='code .'
-alias ls='ls -GFh'
+alias ls='ls --color=auto -GFh'
 alias ll='ls -alFh'
 alias la='ls -A'
 alias lt='ls -lt'

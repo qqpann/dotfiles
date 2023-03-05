@@ -38,9 +38,9 @@ set virtualedit=all
 set showmatch
 
 " Enable backup files
-set backup
-set backupdir=~/.vim/backups
-set backupext=.bak
+" set backup
+" set backupdir=~/.vim/backups
+" set backupext=.bak
 
 " Enable persistent undo
 set undofile
@@ -48,3 +48,4 @@ set undodir=~/.vim/undo
 
 " Enable line wrapping
 set wrap
+
