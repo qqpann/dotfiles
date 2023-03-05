@@ -6,6 +6,8 @@ ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/zsh/.zprofile ~/.zprofile
 ln -sf ~/.dotfiles/zsh/.zshrc ~/.zshrc
 
+git -C "$HOME/.dotfiles" update-index --assume-unchanged ~/.dotfiles/zsh/.zshrc
+
 # Starship prompt
 sh -c "$(curl -sS https://starship.rs/install.sh)" "" --bin-dir $HOME/.local/bin
 
