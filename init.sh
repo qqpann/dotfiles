@@ -17,4 +17,4 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 # pnpm
-curl -fsSL https://get.pnpm.io/install.sh | sh -
+sh -c "$(curl -fsSL https://get.pnpm.io/install.sh)" "" --force
