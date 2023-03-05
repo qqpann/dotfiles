@@ -30,7 +30,10 @@ export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
 # pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # poetry
 export PATH="$HOME/.local/bin:$PATH"
