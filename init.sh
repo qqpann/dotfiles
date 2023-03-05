@@ -1,3 +1,8 @@
+# echo "Install brew in advance."
+ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/.dotfiles/zsh/.zprofile ~/.zprofile
+ln -sf ~/.dotfiles/zsh/.zshrc ~/.zshrc
+
 # Oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # Starship prompt
