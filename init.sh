@@ -1,12 +1,13 @@
+# Oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
 # echo "Install brew in advance."
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/zsh/.zprofile ~/.zprofile
 ln -sf ~/.dotfiles/zsh/.zshrc ~/.zshrc
 
-# Oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # Starship prompt
-curl -sS https://starship.rs/install.sh | sh
+sh -c "$(curl -sS https://starship.rs/install.sh)" "" --bin-dir $HOME/.local/bin
 
 # zsh-completions
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
