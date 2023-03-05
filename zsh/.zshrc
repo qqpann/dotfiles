@@ -5,7 +5,11 @@ fi
 # =================================================================
 # Aliases
 alias c.='code .'
-alias ls='ls --color=auto'
+alias ls='ls -GFh'
+alias ll='ls -alFh'
+alias la='ls -A'
+alias lt='ls -lt'
+alias lr='ls -R'
 # =================================================================
 
 # asdf - cross-language version manager
