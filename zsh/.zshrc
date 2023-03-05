@@ -7,6 +7,7 @@ fi
 
 # =================================================================
 # Aliases
+alias ..='cd ..'
 alias c.='code .'
 alias ls='ls -GFh'
 alias ll='ls -alFh'
