@@ -1,3 +1,21 @@
+mkdir -p $HOME/.local/bin
+
+# check if sh is POSIX-compliant
+if sh -c 'true' >/dev/null 2>&1; then
+    posix_sh=sh
+else
+    # check if dash or ash is installed and use it as posix_sh
+    if command -v dash >/dev/null 2>&1; then
+        posix_sh=dash
+    elif command -v ash >/dev/null 2>&1; then
+        posix_sh=ash
+    else
+        echo "No POSIX-compliant shell found (checked sh, dash, and ash)."
+        exit 1
+    fi
+fi
+echo "Using POSIX-compliant shell: $posix_sh"
+
 # Oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
@@ -14,7 +32,7 @@ ln -sf ~/.dotfiles/vim/vimrc ~/.vim_runtime/my_configs.vim
 git -C "$HOME/.dotfiles" update-index --assume-unchanged ~/.dotfiles/zsh/.zshrc
 
 # Starship prompt
-sh -c "$(curl -sS https://starship.rs/install.sh)" "" --bin-dir $HOME/.local/bin
+curl -fsSL https://starship.rs/install.sh | $posix_sh -s -- --bin-dir $HOME/.local/bin
 
 # zsh-completions
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
