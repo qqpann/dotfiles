@@ -1,5 +1,13 @@
 mkdir -p $HOME/.local/bin
 
+# Check if zsh is installed
+if ! command -v zsh >/dev/null 2>&1; then
+    echo "zsh is not installed."
+    echo "ex: sudo apt install zsh; sudo chsh -s /usr/bin/zsh"
+    echo "Exiting."
+    exit 1
+fi
+
 # check if sh is POSIX-compliant
 if sh -c 'true' >/dev/null 2>&1; then
     posix_sh=sh
