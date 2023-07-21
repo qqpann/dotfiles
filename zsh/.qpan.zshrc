@@ -1,3 +1,6 @@
+# common path
+export PATH="$HOME/.local/bin:$PATH"
+
 if [ -f $HOME/.dotfiles/update.sh ]; then
 	source $HOME/.dotfiles/update.sh
 fi
@@ -40,9 +43,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-
-# poetry
-export PATH="$HOME/.local/bin:$PATH"
 
 # openssl
 # required for some python packages such as grpcio
