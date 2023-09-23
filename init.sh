@@ -52,6 +52,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 # pnpm
 curl -fsSL https://get.pnpm.io/install.sh | sh -
+pnpm install-completion zsh
 
 # pyenv
 curl https://pyenv.run | bash
