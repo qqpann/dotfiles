@@ -1,4 +1,4 @@
 # only mac
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  eval "$(brew shellenv)"
+	source $HOME/.dotfiles/zsh/.mac.zshrc
 fi
