@@ -11,7 +11,7 @@ fi
 # =================================================================
 # Aliases
 alias ..='cd ..'
-alias c.='code .'
+alias c.='~/.dotfiles/scripts/code-dot.sh'
 alias l='ls --color=auto -GFh'
 alias ll='ls -alFh'
 alias la='ls -A'
