@@ -12,6 +12,7 @@ fi
 # Aliases
 alias ..='cd ..'
 alias c.='~/.dotfiles/scripts/code-dot.sh'
+alias g.='github .'
 alias l='ls --color=auto -GFh'
 alias ll='ls -alFh'
 alias la='ls -A'
