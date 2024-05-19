@@ -7,7 +7,6 @@ fi
 if [ -f $HOME/.dotfiles/zsh/.omz.zshrc ]; then
 	source $HOME/.dotfiles/zsh/.omz.zshrc
 fi
-export XDG_CONFIG_HOME="$HOME/.dotfiles"
 
 # =================================================================
 # Aliases
