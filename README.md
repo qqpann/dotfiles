@@ -33,6 +33,13 @@ brew bundle dump --force
 
 Profiles can also be imported/exported as JSON.
 
+Now, you can sync the settings once you run the following command:
+
+```sh
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/iterm"
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+```
+
 ## VSCode config
 
 VSCode does not have a proper default for press & hold behavior, making vim mode hard to use.
