@@ -10,3 +10,5 @@
 	required = true
 [init]
 	defaultBranch = main
+[core]
+	excludesfile = ~/.dotfiles/git/.gitignore_global
