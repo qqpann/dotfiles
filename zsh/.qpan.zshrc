@@ -18,6 +18,7 @@ alias ll='ls -alFh'
 alias la='ls -A'
 alias lt='ls -lt'
 alias lr='ls -R'
+alias ccusage='bunx ccusage@latest'
 # =================================================================
 
 # asdf - cross-language version manager
